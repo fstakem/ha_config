@@ -11,7 +11,7 @@ yoga:
   hide_if_away: false
   mac: E8:2A:EA:CF:0F:6C
   name: yoga
-  picture: /local/yoga.jpg
+  picture: /local/yoga_pants.jpg
   track: true
   vendor: Intel Corporate
 
@@ -19,7 +19,7 @@ asus_router:
   hide_if_away: false
   mac: 60:A4:4C:A1:94:68
   name: asus_router 
-  picture: router.jpg
+  picture: /local/router.jpg
   track: true
   vendor: ASUSTek COMPUTER INC.
 

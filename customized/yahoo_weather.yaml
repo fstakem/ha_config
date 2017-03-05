@@ -1,0 +1,16 @@
+sensor.yweather_condition:
+  friendly_name: 'Condition'
+sensor.yweather_current:
+  friendly_name: 'Currently'
+sensor.yweather_humidity:
+  friendly_name: 'Humidity'
+sensor.yweather_temperature:
+  friendly_name: 'Temperature'
+sensor.yweather_temperature_max:
+  friendly_name: 'Temperature Max'
+sensor.yweather_temperature_min:
+  friendly_name: 'Temperature Min'
+sensor.yweather_visibility:
+  friendly_name: 'Visibility'
+sensor.yweather_wind_speed:
+  friendly_name: 'Wind Speed'
