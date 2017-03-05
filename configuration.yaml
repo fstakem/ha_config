@@ -1,0 +1,167 @@
+homeassistant:
+  name: Home
+  latitude: 33.8822
+  longitude: -84.3783
+  elevation: 279
+  unit_system: imperial
+  time_zone: America/New_York
+
+# Enables the frontend
+frontend:
+
+http:
+  api_password: !env_var HA_UI_PASSWORD
+  server_port: 8123
+  ip_ban_enabled: True
+  login_attempts_threshold: 10
+  # Uncomment this if you are using SSL or running in Docker etc
+  # base_url: example.duckdns.org:8123
+
+# Checks for available updates
+updater:
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time.
+history:
+
+# View all events in a logbook
+logbook:
+
+# Track the sun
+sun:
+
+# Weather Prediction
+sensor:
+  - platform: moon
+  - platform: yr
+  - platform: time_date
+    display_options:
+      - 'date'
+      - 'time'
+  - platform: cpuspeed
+  - platform: bitcoin
+    display_options:
+      - exchangerate
+      - trade_volume_btc
+      - miners_revenue_usd
+      - btc_mined
+      - trade_volume_usd
+      - difficulty
+      - minutes_between_blocks
+      - number_of_transactions
+      - hash_rate
+      - timestamp
+      - mined_blocks
+      - blocks_size
+      - total_fees_btc
+      - total_btc_sent
+      - estimated_btc_sent
+      - total_btc
+      - total_blocks
+      - next_retarget
+      - estimated_transaction_volume_usd
+      - miners_revenue_btc
+      - market_price_usd
+  - platform: yweather
+    monitored_conditions:
+      - weather
+      - weather_current
+      - temp_min
+      - temp_max
+      - wind_speed
+      - visibility
+      - humidity
+      - temperature
+
+
+device_tracker:
+  - platform: nmap_tracker
+    hosts: 192.168.1.1/24
+    home_interval: 5
+
+# Text to speech
+tts:
+  platform: google
+
+zwave:
+  usb_path: /dev/ttyACM0
+  config_path: /srv/home_assistant/ha_env/lib/python3.6/site-packages/libopenzwave-0.3.1-py3.6-linux-armv7l.egg/config
+
+
+group:
+  devices:
+    name: Devices
+    entities:
+      - device_tracker.beast
+      - device_tracker.yoga
+      - device_tracker.mac
+      - device_tracker.tv
+      - device_tracker.asus_router
+  bitcoin:
+    name: Bitcoin
+    entities:
+      - sensor.block_size
+      - sensor.difficulty
+      - sensor.est_transaction_volume
+      - sensor.estimated_sent
+      - sensor.exchange_rate_1_btc
+      - sensor.hash_rate
+      - sensor.market_price
+      - sensor.minded_blocks
+      - sensor.mined
+      - sensor.miners_revenue
+      - sensor.miners_revenue_2
+      - sensor.next_retarget
+      - sensor.no_of_transactions
+      - sensor.time_between_blocks
+      - sensor.timestamp
+      - sensor.total
+      - sensor.total_blocks
+      - sensor.total_fees
+      - sensor.total_sent
+      - sensor.trade_volume
+      - sensor.trade_volume_2
+  yahoo_weather:
+    name: Yahoo Weather
+    entities:
+      - sensor.yweather_condition
+      - sensor.yweather_current
+      - sensor.yweather_humidity
+      - sensor.yweather_temperature
+      - sensor.yweather_temperature_max
+      - sensor.yweather_temperature_min
+      - sensor.yweather_visibility
+      - sensor.yweather_wind_speed
+  multi_sensor:
+    name: MultiSensor
+    entities:
+      - sensor.vision_zp3111_multisensor_4in1_battery_level_2_0
+      - sensor.vision_zp3111_multisensor_4in1_luminance_2_3
+      - sensor.vision_zp3111_multisensor_4in1_relative_humidity_2_5
+      - sensor.vision_zp3111_multisensor_4in1_temperature_2_1
+  multi_sensor_other:
+    name: MultiSensorOther
+    entities:
+      - sensor.vision_zp3111_multisensor_4in1_alarm_level_2_1
+      - sensor.vision_zp3111_multisensor_4in1_alarm_type_2_0
+      - sensor.vision_zp3111_multisensor_4in1_burglar_2_10
+      - sensor.vision_zp3111_multisensor_4in1_clock_2_14
+      - sensor.vision_zp3111_multisensor_4in1_emergency_2_13
+      - sensor.vision_zp3111_multisensor_4in1_power_management_2_11
+      - sensor.vision_zp3111_multisensor_4in1_sourcenodeid_2_2
+      - sensor.vision_zp3111_multisensor_4in1_system_2_12
+  computer:
+    name: Computer
+    entities:
+      - sensor.cpu_speed
+  date_time:
+    name: Date Time
+    entities:
+      - sensor.date
+      - sensor.time
+

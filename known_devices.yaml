@@ -1,0 +1,40 @@
+
+beast:
+  hide_if_away: false
+  mac: 4C:CC:6A:90:24:22
+  name: beast
+  picture: /local/bear.jpg
+  track: true
+  vendor: Micro-Star INTL CO., LTD.
+
+yoga:
+  hide_if_away: false
+  mac: E8:2A:EA:CF:0F:6C
+  name: yoga
+  picture: /local/yoga.jpg
+  track: true
+  vendor: Intel Corporate
+
+asus_router:
+  hide_if_away: false
+  mac: 60:A4:4C:A1:94:68
+  name: asus_router 
+  picture: router.jpg
+  track: true
+  vendor: ASUSTek COMPUTER INC.
+
+tv:
+  hide_if_away: false
+  mac: 00:6B:9E:7B:57:52
+  name: tv 
+  picture: /local/tv.jpg
+  track: true
+  vendor: Vizio, Inc
+
+mac:
+  hide_if_away: false
+  mac: B8:F6:B1:1A:B8:33
+  name: mac
+  picture: /local/mac.jpg
+  track: true
+  vendor: Apple, Inc.

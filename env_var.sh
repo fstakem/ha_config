@@ -1,0 +1,1 @@
+source HA_UI_PASSWORD=test
