@@ -38,3 +38,11 @@ mac:
   picture: /local/mac.jpg
   track: true
   vendor: Apple, Inc.
+
+alpfstakem:
+  hide_if_away: false
+  mac: C4:B3:01:C3:CE:31
+  name: work_laptop
+  picture: /local/work.jpeg
+  track: true
+  vendor: Apple, Inc.

@@ -1,0 +1,98 @@
+sensor.aeotec_dsc11_smart_strip_energy_3_0:
+  friendly_name: 'All Energy'
+sensor.aeotec_dsc11_smart_strip_energy_3_0_2:
+  friendly_name: 'Switch 1 Energy'
+sensor.aeotec_dsc11_smart_strip_energy_3_0_3:
+  friendly_name: 'Switch 2 Energy'
+sensor.aeotec_dsc11_smart_strip_energy_3_0_4:
+  friendly_name: 'Switch 3 Energy'
+sensor.aeotec_dsc11_smart_strip_energy_3_0_5:
+  friendly_name: 'Switch 4 Energy'
+
+sensor.aeotec_dsc11_smart_strip_energy_4_0:
+  friendly_name: 'All Energy -- Broken'
+sensor.aeotec_dsc11_smart_strip_energy_4_0_2:
+  friendly_name: 'Switch 1 Energy -- Broken'
+sensor.aeotec_dsc11_smart_strip_energy_4_0_3:
+  friendly_name: 'Switch 2 Energy -- Broken'
+sensor.aeotec_dsc11_smart_strip_energy_4_0_4:
+  friendly_name: 'Switch 3 Energy -- Broken'
+sensor.aeotec_dsc11_smart_strip_energy_4_0_5:
+  friendly_name: 'Switch 4 Energy -- Broken'
+
+sensor.aeotec_dsc11_smart_strip_power_3_8:
+  friendly_name: 'All Power -- Broken'
+sensor.aeotec_dsc11_smart_strip_power_3_8_2:
+  friendly_name: 'Switch 1 Power -- Broken'
+sensor.aeotec_dsc11_smart_strip_power_3_8_3:
+  friendly_name: 'Switch 2 Power -- Broken'
+sensor.aeotec_dsc11_smart_strip_power_3_8_4:
+  friendly_name: 'Switch 3 Power -- Broken'
+sensor.aeotec_dsc11_smart_strip_power_3_8_5:
+  friendly_name: 'Switch 4 Power -- Broken'
+
+sensor.aeotec_dsc11_smart_strip_power_4_8:
+  friendly_name: 'All Power -- Broken'
+sensor.aeotec_dsc11_smart_strip_power_4_8_2:
+  friendly_name: 'Switch 1 Power -- Broken'
+sensor.aeotec_dsc11_smart_strip_power_4_8_3:
+  friendly_name: 'Switch 2 Power -- Broken'
+sensor.aeotec_dsc11_smart_strip_power_4_8_4:
+  friendly_name: 'Switch 3 Power -- Broken'
+sensor.aeotec_dsc11_smart_strip_power_4_8_5:
+  friendly_name: 'Switch 4 Power -- Broken'
+
+sensor.aeotec_dsc11_smart_strip_previous_reading_3_9:
+  friendly_name: 'All Previous Power -- Broken'
+sensor.aeotec_dsc11_smart_strip_previous_reading_3_9_2:
+  friendly_name: 'Switch 1 Previous Power -- Broken'
+sensor.aeotec_dsc11_smart_strip_previous_reading_3_9_3:
+  friendly_name: 'Switch 2 Previous Power -- Broken'
+sensor.aeotec_dsc11_smart_strip_previous_reading_3_9_4:
+  friendly_name: 'Switch 3 Previous Power -- Broken'
+sensor.aeotec_dsc11_smart_strip_previous_reading_3_9_5:
+  friendly_name: 'Switch 4 Previous Power -- Broken'
+
+sensor.aeotec_dsc11_smart_strip_previous_reading_4_1:
+  friendly_name: 'All Previous Energy -- Broken'
+sensor.aeotec_dsc11_smart_strip_previous_reading_4_1_2:
+  friendly_name: 'Switch 1 Previous Energy -- Broken'
+sensor.aeotec_dsc11_smart_strip_previous_reading_4_1_3:
+  friendly_name: 'Switch 2 Previous Energy -- Broken'
+sensor.aeotec_dsc11_smart_strip_previous_reading_4_1_4:
+  friendly_name: 'Switch 3 Previous -- Broken'
+sensor.aeotec_dsc11_smart_strip_previous_reading_4_1_5:
+  friendly_name: 'Switch 4 Previous -- Broken'
+
+sensor.aeotec_dsc11_smart_strip_previous_reading_4_9:
+  friendly_name: 'All Previous Power -- Broken'
+sensor.aeotec_dsc11_smart_strip_previous_reading_4_9_2:
+  friendly_name: 'Switch 1 Previous Power -- Broken'
+sensor.aeotec_dsc11_smart_strip_previous_reading_4_9_3:
+  friendly_name: 'Switch 2 Previous Power -- Broken'
+sensor.aeotec_dsc11_smart_strip_previous_reading_4_9_4:
+  friendly_name: 'Switch 3 Previous Power -- Broken'
+sensor.aeotec_dsc11_smart_strip_previous_reading_4_9_5:
+  friendly_name: 'Switch 4 Previous Power -- Broken'
+
+switch.aeotec_dsc11_smart_strip_switch_3_0:
+  friendly_name: 'Power Switch All -- Broken'
+switch.aeotec_dsc11_smart_strip_switch_3_0_2:
+  friendly_name: 'Power Switch 1  -- Broken'
+switch.aeotec_dsc11_smart_strip_switch_3_0_3:
+  friendly_name: 'Power Switch 2  -- Broken'
+switch.aeotec_dsc11_smart_strip_switch_3_0_4:
+  friendly_name: 'Power Switch 3  -- Broken'
+switch.aeotec_dsc11_smart_strip_switch_3_0_5:
+  friendly_name: 'Power Switch 4  -- Broken'
+
+switch.aeotec_dsc11_smart_strip_switch_4_0:
+  friendly_name: 'Power Switch All'
+switch.aeotec_dsc11_smart_strip_switch_4_0_2:
+  friendly_name: 'Power Switch 1'
+switch.aeotec_dsc11_smart_strip_switch_4_0_3:
+  friendly_name: 'Power Switch 2'
+switch.aeotec_dsc11_smart_strip_switch_4_0_4:
+  friendly_name: 'Power Switch 3'
+switch.aeotec_dsc11_smart_strip_switch_4_0_5:
+  friendly_name: 'Power Switch 4'

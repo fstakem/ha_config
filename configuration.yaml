@@ -121,11 +121,15 @@ group:
     view: yes
     entities:
       - group.multi_sensor
+      - group.power_strip_1
+      - group.power_strip_1_readings
   other:
     name: Other
     view: yes
     entities:
       - group.multi_sensor_other
+      - group.unused_switchs
+      - group.unused_readings
 
   # Groups
   devices:
@@ -136,6 +140,7 @@ group:
       - device_tracker.mac
       - device_tracker.tv
       - device_tracker.asus_router
+      - device_tracker.alpfstakem
   bitcoin:
     name: Bitcoin
     entities:
@@ -190,6 +195,63 @@ group:
       - sensor.vision_zp3111_multisensor_4in1_power_management_2_11
       - sensor.vision_zp3111_multisensor_4in1_sourcenodeid_2_2
       - sensor.vision_zp3111_multisensor_4in1_system_2_12
+  power_strip_1:
+    name: Power Strip Z1
+    entities:
+      - switch.aeotec_dsc11_smart_strip_switch_4_0_2
+      - switch.aeotec_dsc11_smart_strip_switch_4_0_3
+      - switch.aeotec_dsc11_smart_strip_switch_4_0_4
+      - switch.aeotec_dsc11_smart_strip_switch_4_0_5
+  power_strip_1_readings:
+    name: Power Strip Z1 Readings
+    entities:
+      - sensor.aeotec_dsc11_smart_strip_energy_3_0
+      - sensor.aeotec_dsc11_smart_strip_energy_3_0_2
+      - sensor.aeotec_dsc11_smart_strip_energy_3_0_3
+      - sensor.aeotec_dsc11_smart_strip_energy_3_0_4
+      - sensor.aeotec_dsc11_smart_strip_energy_3_0_5
+  unused_switchs:
+    name: Unused Switches
+    entities:
+      - switch.aeotec_dsc11_smart_strip_switch_4_0
+      - switch.aeotec_dsc11_smart_strip_switch_3_0
+      - switch.aeotec_dsc11_smart_strip_switch_3_0_2
+      - switch.aeotec_dsc11_smart_strip_switch_3_0_3
+      - switch.aeotec_dsc11_smart_strip_switch_3_0_4
+      - switch.aeotec_dsc11_smart_strip_switch_3_0_5
+  unused_readings:
+    name: Unused Readings
+    entities:
+      - sensor.aeotec_dsc11_smart_strip_power_3_8
+      - sensor.aeotec_dsc11_smart_strip_power_3_8_2
+      - sensor.aeotec_dsc11_smart_strip_power_3_8_3
+      - sensor.aeotec_dsc11_smart_strip_power_3_8_4
+      - sensor.aeotec_dsc11_smart_strip_power_3_8_5
+      - sensor.aeotec_dsc11_smart_strip_previous_reading_3_9
+      - sensor.aeotec_dsc11_smart_strip_previous_reading_3_9_2
+      - sensor.aeotec_dsc11_smart_strip_previous_reading_3_9_3
+      - sensor.aeotec_dsc11_smart_strip_previous_reading_3_9_4
+      - sensor.aeotec_dsc11_smart_strip_previous_reading_3_9_5
+      - sensor.aeotec_dsc11_smart_strip_energy_4_0
+      - sensor.aeotec_dsc11_smart_strip_energy_4_0_2
+      - sensor.aeotec_dsc11_smart_strip_energy_4_0_3
+      - sensor.aeotec_dsc11_smart_strip_energy_4_0_4
+      - sensor.aeotec_dsc11_smart_strip_energy_4_0_5
+      - sensor.aeotec_dsc11_smart_strip_power_4_8
+      - sensor.aeotec_dsc11_smart_strip_power_4_8_2
+      - sensor.aeotec_dsc11_smart_strip_power_4_8_3
+      - sensor.aeotec_dsc11_smart_strip_power_4_8_4
+      - sensor.aeotec_dsc11_smart_strip_power_4_8_5
+      - sensor.aeotec_dsc11_smart_strip_previous_reading_4_1
+      - sensor.aeotec_dsc11_smart_strip_previous_reading_4_1_2
+      - sensor.aeotec_dsc11_smart_strip_previous_reading_4_1_3
+      - sensor.aeotec_dsc11_smart_strip_previous_reading_4_1_4
+      - sensor.aeotec_dsc11_smart_strip_previous_reading_4_1_5
+      - sensor.aeotec_dsc11_smart_strip_previous_reading_4_9
+      - sensor.aeotec_dsc11_smart_strip_previous_reading_4_9_2
+      - sensor.aeotec_dsc11_smart_strip_previous_reading_4_9_3
+      - sensor.aeotec_dsc11_smart_strip_previous_reading_4_9_4
+      - sensor.aeotec_dsc11_smart_strip_previous_reading_4_9_5
   computer:
     name: Computer
     entities:
