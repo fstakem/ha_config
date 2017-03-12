@@ -1,6 +1,5 @@
 # Upper left long press
-alias: Switch 1 Off
-initial_state: True
+alias: Switch 1 Toggle
 hide_entity: False
 trigger:
   - platform: event
@@ -9,5 +8,5 @@ trigger:
       entity_id: zmote_1_3
       scene_id: 2
 action:
-  - service: homeassistant.turn_off
+  - service: homeassistant.toggle
     entity_id: switch.zstrip_1_switch_2_0_2
