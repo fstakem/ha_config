@@ -1,0 +1,13 @@
+# Upper right long press
+alias: Switch 2 Off
+initial_state: True
+hide_entity: False
+trigger:
+  - platform: event
+    event_type: zwave.scene_activated
+    event_data:
+      entity_id: zmote_1_3
+      scene_id: 4
+action:
+  - service: homeassistant.turn_off
+    entity_id: switch.zstrip_1_switch_2_0_2

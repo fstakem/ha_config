@@ -1,0 +1,13 @@
+# Upper left short press
+alias: Switch 1 On
+initial_state: True
+hide_entity: False
+trigger:
+  - platform: event
+    event_type: zwave.scene_activated
+    event_data:
+      entity_id: zmote_1_3
+      scene_id: 1
+action:
+  - service: homeassistant.turn_on
+    entity_id: switch.zstrip_1_switch_2_0_2
