@@ -89,8 +89,8 @@ sensor:
 
 device_tracker:
   - platform: nmap_tracker
-    hosts: 192.168.1.1/24
-    home_interval: 5
+    hosts: 192.168.2.200/24
+    home_interval: 4
 
 # Text to speech
 tts:
