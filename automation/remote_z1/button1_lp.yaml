@@ -9,4 +9,4 @@ trigger:
       scene_id: 2
 action:
   - service: homeassistant.toggle
-    entity_id: switch.zstrip_1_switch_2_0_2
+    entity_id: switch.wemo_mini

@@ -8,5 +8,5 @@ trigger:
       entity_id: zmote_1_3
       scene_id: 5
 action:
-  - service: light.toggle
-    entity_id: light.zbulb_1_level_5_0
+  - service: homeassistant.toggle
+    entity_id: switch.zstrip_1_switch_2_0_3

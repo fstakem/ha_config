@@ -45,29 +45,6 @@ sensor:
       - 'date'
       - 'time'
   - platform: cpuspeed
-  - platform: bitcoin
-    display_options:
-      - exchangerate
-      - trade_volume_btc
-      - miners_revenue_usd
-      - btc_mined
-      - trade_volume_usd
-      - difficulty
-      - minutes_between_blocks
-      - number_of_transactions
-      - hash_rate
-      - timestamp
-      - mined_blocks
-      - blocks_size
-      - total_fees_btc
-      - total_btc_sent
-      - estimated_btc_sent
-      - total_btc
-      - total_blocks
-      - next_retarget
-      - estimated_transaction_volume_usd
-      - miners_revenue_btc
-      - market_price_usd
   - platform: yweather
     monitored_conditions:
       - weather
@@ -100,6 +77,9 @@ zwave:
   usb_path: /dev/ttyACM0
   config_path: /srv/home_assistant/ha_env/lib/python3.6/site-packages/libopenzwave-0.3.1-py3.6-linux-armv7l.egg/config
 
+wemo:
+  static:
+    - 192.168.2.220
 
 group:
   # Views
@@ -110,7 +90,6 @@ group:
       - group.computer
       - group.date_time
       - group.yahoo_weather
-      - group.bitcoin
   hosts:
     name: Hosts
     view: yes
@@ -122,7 +101,7 @@ group:
     entities:
       - group.multi_sensor
       - group.power_strip_1
-      - group.power_strip_1_readings
+      - group.wifi_outlet_1
   other:
     name: Other
     view: yes
@@ -130,6 +109,7 @@ group:
       - group.multi_sensor_other
       - group.unused_switchs
       - group.unused_readings
+      - group.power_strip_1_readings
 
   # Groups
   devices:
@@ -141,6 +121,10 @@ group:
       - device_tracker.tv
       - device_tracker.asus_router
       - device_tracker.alpfstakem
+      - device_tracker.wemo
+      - device_tracker.androida306f1f411a403b0
+      - device_tracker.broadlink_rmpropluse7eb86
+      - device_tracker.routerasuscom
   yahoo_weather:
     name: Yahoo Weather
     entities:
@@ -152,6 +136,10 @@ group:
       - sensor.yweather_temperature_min
       - sensor.yweather_visibility
       - sensor.yweather_wind_speed
+  wifi_outlet_1:
+    name: Wifi Outlet 1
+    entities:
+      - switch.wemo_mini
   multi_sensor:
     name: MultiSensor
     entities:

@@ -18,7 +18,7 @@ yoga:
 asus_router:
   hide_if_away: false
   mac: 60:A4:4C:A1:94:68
-  name: asus_router 
+  name: router_wild 
   picture: /local/router.jpg
   track: true
   vendor: ASUSTek COMPUTER INC.
@@ -46,3 +46,35 @@ alpfstakem:
   picture: /local/work.jpeg
   track: true
   vendor: Apple, Inc.
+
+routerasuscom:
+  hide_if_away: false
+  mac: 70:8B:CD:2F:92:F0
+  name: router_home
+  picture: /local/router.jpg
+  track: true
+  vendor: ASUSTek COMPUTER INC.
+
+androida306f1f411a403b0:
+  hide_if_away: false
+  mac: 70:8B:CD:E1:FC:CE
+  name: controller
+  picture: /local/android.png
+  track: true
+  vendor: ASUSTek COMPUTER INC.
+
+wemo:
+  hide_if_away: false
+  mac: 60:38:E0:E9:63:1D
+  name: wemo_switch_1
+  picture: /local/wemo.jpeg
+  track: true
+  vendor: Belkin International Inc.
+
+broadlink_rmpropluse7eb86:
+  hide_if_away: false
+  mac: 34:EA:34:E7:EB:86
+  name: ir_blaster
+  picture: /local/ir.png
+  track: true
+  vendor: unknown
