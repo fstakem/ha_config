@@ -141,30 +141,6 @@ group:
       - device_tracker.tv
       - device_tracker.asus_router
       - device_tracker.alpfstakem
-  bitcoin:
-    name: Bitcoin
-    entities:
-      - sensor.block_size
-      - sensor.difficulty
-      - sensor.est_transaction_volume
-      - sensor.estimated_sent
-      - sensor.exchange_rate_1_btc
-      - sensor.hash_rate
-      - sensor.market_price
-      - sensor.minded_blocks
-      - sensor.mined
-      - sensor.miners_revenue
-      - sensor.miners_revenue_2
-      - sensor.next_retarget
-      - sensor.no_of_transactions
-      - sensor.time_between_blocks
-      - sensor.timestamp
-      - sensor.total
-      - sensor.total_blocks
-      - sensor.total_fees
-      - sensor.total_sent
-      - sensor.trade_volume
-      - sensor.trade_volume_2
   yahoo_weather:
     name: Yahoo Weather
     entities:
