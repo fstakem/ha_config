@@ -109,7 +109,6 @@ group:
       - group.multi_sensor_other
       - group.unused_switchs
       - group.unused_readings
-      - group.power_strip_1_readings
 
   # Groups
   devices:
@@ -156,19 +155,6 @@ group:
       - switch.zstrip_1_switch_2_0_3
       - switch.zstrip_1_switch_2_0_4
       - switch.zstrip_1_switch_2_0_5
-  power_strip_1_readings:
-    name: Power Strip Z1 Readings
-    entities:
-      - sensor.zstrip_1_energy_2_0
-      - sensor.zstrip_1_energy_2_0_2
-      - sensor.zstrip_1_energy_2_0_3
-      - sensor.zstrip_1_energy_2_0_4
-      - sensor.zstrip_1_energy_2_0_5
-      - sensor.zstrip_1_power_2_8
-      - sensor.zstrip_1_power_2_8_2
-      - sensor.zstrip_1_power_2_8_3
-      - sensor.zstrip_1_power_2_8_4
-      - sensor.zstrip_1_power_2_8_5
   computer:
     name: Computer
     entities:

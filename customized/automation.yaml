@@ -1,0 +1,24 @@
+automation.switch_1_toggle:
+  friendly_name: 'Switch 1 Toggle'
+  hidden: true
+automation.switch_1_toggle_2:
+  friendly_name: 'Switch 1 Long Toggle'
+  hidden: true
+automation.switch_2_toggle:
+  friendly_name: 'Switch 2 Toggle'
+  hidden: true
+automation.switch_2_toggle_2:
+  friendly_name: 'Switch 2 Long Toggle'
+  hidden: true
+automation.switch_3_toggle:
+  friendly_name: 'Switch 3 Toggle'
+  hidden: true
+automation.switch_3_toggle_2:
+  friendly_name: 'Switch 3 Long Toggle'
+  hidden: true
+automation.switch_4_toggle:
+  friendly_name: 'Switch 4 Toggle'
+  hidden: true
+automation.switch_4_toggle_2:
+  friendly_name: 'Switch 4 Long Toggle'
+  hidden: true
